@@ -4,8 +4,8 @@
 #PBS -N DeMultiplex
 #PBS -M klc328@nyu.edu
 #PBS -m abe
-#PBS -e localhost:/scratch/klc328/jobs/kafue1/${PBS_JOBNAME}.e${PBS_JOBID}
-#PBS -o localhost:/scratch/klc328/jobs/kafue1/${PBS_JOBNAME}.o${PBS_JOBID}
+#PBS -e localhost:/home/klc328/jobs/kafue1/${PBS_JOBNAME}.e${PBS_JOBID}
+#PBS -o localhost:/home/klc328/jobs/kafue1/${PBS_JOBNAME}.o${PBS_JOBID}
 
 cd /scratch/klc328/demultiplex/
 
