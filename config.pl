@@ -4,7 +4,7 @@
 our $is_compressed = 1;
 
 # Number of unique indexed primers used
-our $num_indices = 8;
+our $num_indices = 1;
 
 # Number of unique barcoded adapters used
 our $num_barcodes = 12;
@@ -17,6 +17,6 @@ our $adapters_list = "adapters_list.fa";
 ##########################################################################################
 
 # Prefix of fastq or fastq.gz filenames
-our $prefix = "Kafue_Blood";
+our $prefix = "FecalSeq_L2";
 
 1;
