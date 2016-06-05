@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#PBS -l nodes=1:ppn=1,walltime=30:00:00,mem=4gb
+#PBS -N DeMultiplex
+#PBS -M klc328@nyu.edu
+#PBS -m abe
+#PBS -e localhost:/scratch/klc328/jobs/kafue1/${PBS_JOBNAME}.e${PBS_JOBID}
+#PBS -o localhost:/scratch/klc328/jobs/kafue1/${PBS_JOBNAME}.o${PBS_JOBID}
+
+cd /scratch/klc328/demultiplex/
+
+module load ea_utils/intel/1.1.2
+
+./demultiplex.pl
+
+exit

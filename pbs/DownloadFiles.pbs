@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#PBS -l nodes=1:ppn=1,walltime=30:00:00,mem=16gb
+#PBS -N DownloadFiles
+#PBS -M klc328@nyu.edu
+#PBS -m abe
+#PBS -e localhost:/scratch/klc328/jobs/kafue1/${PBS_JOBNAME}.e${PBS_JOBID}
+#PBS -o localhost:/scratch/klc328/jobs/kafue1/${PBS_JOBNAME}.o${PBS_JOBID}
+
+cd /scratch/klc328/kafue1_demultiplex/
+
+wget --no-check-certificate -O Kafue_Blood_BC1_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_1_ATCACG_L006_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC1_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_1_ATCACG_L006_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC2_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_2_CGATGT_L006_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC2_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_2_CGATGT_L006_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC3_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_3_TTAGGC_L006_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC3_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_3_TTAGGC_L006_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC4_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_4_TGACCA_L006_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC4_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_4_TGACCA_L006_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC5_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_5_ACAGTG_L006_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC5_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_5_ACAGTG_L006_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC6_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_6_GCCAAT_L006_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC6_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_6_GCCAAT_L006_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC7_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_7_CAGATC_L006_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC7_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_7_CAGATC_L006_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC8_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_8_ACTTGA_L006_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Blood_BC8_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Blood_8_ACTTGA_L006_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Feces_BC1_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Fecal_1_ATCACG_L007_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Feces_BC1_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Fecal_1_ATCACG_L007_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Feces_BC2_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Fecal_2_CGATGT_L007_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Feces_BC2_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Fecal_2_CGATGT_L007_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Feces_BC3_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Fecal_3_TTAGGC_L007_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Feces_BC3_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Fecal_3_TTAGGC_L007_R2_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Feces_BC4_R1.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Fecal_4_TGACCA_L007_R1_001.fastq.gz";
+wget --no-check-certificate -O Kafue_Feces_BC4_R2.fastq.gz "https://genome.med.nyu.edu/results/external/burrelllab/2016-02-26/fastq2/Burrell_Fecal_4_TGACCA_L007_R2_001.fastq.gz";
+
+exit

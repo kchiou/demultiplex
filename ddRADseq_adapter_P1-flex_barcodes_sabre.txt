@@ -1,0 +1,12 @@
+TCGAT	demultiplexed/current-BC1_R1.fastq	demultiplexed/current-BC1_R2.fastq
+CGATC	demultiplexed/current-BC2_R1.fastq	demultiplexed/current-BC2_R2.fastq
+TGCAT	demultiplexed/current-BC3_R1.fastq	demultiplexed/current-BC3_R2.fastq
+GCATG	demultiplexed/current-BC4_R1.fastq	demultiplexed/current-BC4_R2.fastq
+GGTTG	demultiplexed/current-BC5_R1.fastq	demultiplexed/current-BC5_R2.fastq
+CAACC	demultiplexed/current-BC6_R1.fastq	demultiplexed/current-BC6_R2.fastq
+AACCA	demultiplexed/current-BC7_R1.fastq	demultiplexed/current-BC7_R2.fastq
+AAGGA	demultiplexed/current-BC8_R1.fastq	demultiplexed/current-BC8_R2.fastq
+CTGAT	demultiplexed/current-BC9_R1.fastq	demultiplexed/current-BC9_R2.fastq
+GCCGT	demultiplexed/current-BC10_R1.fastq	demultiplexed/current-BC10_R2.fastq
+TTACC	demultiplexed/current-BC11_R1.fastq	demultiplexed/current-BC11_R2.fastq
+ATACG	demultiplexed/current-BC12_R1.fastq	demultiplexed/current-BC12_R2.fastq
