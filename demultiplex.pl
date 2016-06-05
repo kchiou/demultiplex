@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-require config.pl;
+require ("config.pl");
 
 our $is_compressed;
 our $num_indices;
