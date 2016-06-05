@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 # Are the files compressed (with extension fastq.gz)?
-our $is_compressed = 1;
+our $is_compressed = 0;
 
 # Number of unique indexed primers used
 our $num_indices = 1;
