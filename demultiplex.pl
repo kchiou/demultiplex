@@ -77,11 +77,17 @@ for (my $i = 1; $i <= $num_indices; $i++) {
 
 		system($adapt_cmd);
 
-		my $mv_cmd_r1 = "mv demultiplexed/BC${i}-BC${b}_TRIM_R1.fastq demultiplexed/" . $prefix . "_BC${i}-BC${b}_R1.fastq";
-		my $mv_cmd_r2 = "mv demultiplexed/BC${i}-BC${b}_TRIM_R2.fastq demultiplexed/" . $prefix . "_BC${i}-BC${b}_R2.fastq";
+		my $mv_cmd_r1 = "mv demultiplexed/BC${i}-BC${b}_TRIM_R1.fastq demultiplexed/BC${i}-BC${b}_R1.fastq";
+		my $mv_cmd_r2 = "mv demultiplexed/BC${i}-BC${b}_TRIM_R2.fastq demultiplexed/BC${i}-BC${b}_R2.fastq";
 
 		system($mv_cmd_r1);
 		system($mv_cmd_r2);
+
+		my $mv_cmd_r3 = "mv demultiplexed/BC${i}-BC${b}_R1.fastq demultiplexed/" . $prefix . "_BC${i}-BC${b}_R1.fastq";
+		my $mv_cmd_r4 = "mv demultiplexed/BC${i}-BC${b}_R2.fastq demultiplexed/" . $prefix . "_BC${i}-BC${b}_R2.fastq";
+
+		system($mv_cmd_r3);
+		system($mv_cmd_r4);
 
 	}
 
