@@ -17,6 +17,6 @@ our $adapters_list = "adapters_list.fa";
 ##########################################################################################
 
 # Prefix of fastq or fastq.gz filenames
-our $prefix = "";
+our $prefix = "PREFIX";
 
 1;
